@@ -19,6 +19,11 @@ function searchKeyword(array,keyword){
 		var engineName = array[i];
 		console.log(engineName);
 		switch(engineName){
+			case "amazon":
+				sURL = "http://www.amazon.in/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=" + keyword;
+				chrome.tabs.create({url:sURL});
+				break;
+
 			case "baidu":
 				sURL = "https://www.baidu.com/s?wd=" + keyword;
 				chrome.tabs.create({url:sURL});
@@ -30,7 +35,12 @@ function searchKeyword(array,keyword){
 				break;
 
 			case "duckduckgo":
-				sURL = "https://www."+engineName+".com/"+keyword;
+				sURL = "https://www."+engineName+".com/" + keyword;
+				chrome.tabs.create({url:sURL});
+				break;
+
+			case "flipkart":
+				sURL = "https://www.flipkart.com/search?q=" + keyword;
 				chrome.tabs.create({url:sURL});
 				break;
 
@@ -43,6 +53,11 @@ function searchKeyword(array,keyword){
 
 			case "stackoverflow":
 				sURL = "http://stackoverflow.com/search?q="+ keyword;
+				chrome.tabs.create({url:sURL});
+				break;
+
+			case "snapdeal":
+				sURL = "https://www.snapdeal.com/search?keyword=" + keyword;
 				chrome.tabs.create({url:sURL});
 				break;
 
@@ -66,5 +81,5 @@ function searchKeyword(array,keyword){
 
 		}
 		}
-	//window.close();
+	window.close();
 }

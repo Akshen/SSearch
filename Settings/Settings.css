@@ -1,5 +1,12 @@
-#saveButton{
+#Box {
+  width: 350px;
+  margin: 0 auto;
+  color: black;
+}
+
+#saveButton {
     border: 2px solid #a1a1a1;
     border-radius: 12px;
-    color:green;
+    color:white;
+    background-color: #4CAF50;
 }
