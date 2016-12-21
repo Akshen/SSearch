@@ -7,7 +7,6 @@ var T = document.getElementById("searchButton");
 if(T){
 	T.addEventListener("click",function(){
 		var keyWord = document.getElementById("keyword").value;
-
 		getEngine(keyWord);
 	});
 
@@ -56,7 +55,7 @@ function searchKeyword(array,keyword){
 
 				break;
 
-			case "expertexhange":
+			case "expertexchange":
 				sURL = "https://www.experts-exchange.com/searchResults.jsp?searchTerms=" + keyword;
 				chrome.tabs.create({url:sURL});
 				break;
@@ -92,7 +91,7 @@ function searchKeyword(array,keyword){
 			case "yahoo":
 				sURL = "https://search.yahoo.com/search?p="+keyword;
 				chrome.tabs.create({url:sURL});
-				
+
 				break;
 
 			case "youtube":

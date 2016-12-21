@@ -1,5 +1,25 @@
-#searchButton
-{
-  border: 2px solid #a1a1a1;
-  border-radius: 12px;
+
+#searchButton {
+	background-color:#44c767;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:12px;
+	padding:11px 21px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+#searchButton:hover {
+	background-color:#5cbf2a;
+}
+
+#searchButton:active {
+	position:relative;
+	top:1px;
 }
