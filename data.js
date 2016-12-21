@@ -18,12 +18,18 @@ function getChanges(){
 	var nine=document.getElementById("9");
 	var ten=document.getElementById("10");
 	var eleven=document.getElementById("11");
+	var twelve=document.getElementById("12");
+	var thirteen=document.getElementById("13");
+	var fourteen=document.getElementById("14");
+	var fifteen=document.getElementById("15");
 
-	var checkboxList=[one,two,three,four,five,six,seven,eight,nine,ten,eleven];
+	var checkboxList=[one,two,three,four,five,six,
+										seven,eight,nine,ten,eleven,
+										twelve,thirteen,fourteen,fifteen];
 	var selectedCB = [];
 
 	//check for selected one's and add them in a array
-	for(var i=0;i<11;i++){
+	for(var i=0;i<15;i++){
 		if(checkboxList[i].checked == true){
 			selectedCB.push(checkboxList[i].value);
 		}
@@ -33,7 +39,7 @@ function getChanges(){
 
 function engine(){
 	var engineList = [];
-	for(var i=0;i<12;i++){
+	for(var i=0;i<16;i++){
 		if(localStorage.getItem(i))
 			engineList.push(localStorage.getItem(i));
 	}

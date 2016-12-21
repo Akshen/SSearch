@@ -34,6 +34,11 @@ function searchKeyword(array,keyword){
 				chrome.tabs.create({url:sURL});
 				break;
 
+			case "codeproject":
+				sURL = "http://www.codeproject.com/search.aspx?q=" + keyword;
+				chrome.tabs.create({url:sURL});
+				break;
+
 			case "duckduckgo":
 				sURL = "https://www."+engineName+".com/" + keyword;
 				chrome.tabs.create({url:sURL});
@@ -44,15 +49,30 @@ function searchKeyword(array,keyword){
 				chrome.tabs.create({url:sURL});
 				break;
 
-		//Need to work on autoClick
+
 			case "google":
 				sURL = "https://www.google.com/search?q="+keyword;
 				chrome.tabs.create({url:sURL});
-				//console.log(document.getElementById("lst-ib").value);
+
+				break;
+
+			case "expertexhange":
+				sURL = "https://www.experts-exchange.com/searchResults.jsp?searchTerms=" + keyword;
+				chrome.tabs.create({url:sURL});
+				break;
+
+			case "infibeam":
+				sURL = "http://www.infibeam.com/search?q=" + keyword;
+				chrome.tabs.create({url:sURL});
 				break;
 
 			case "stackoverflow":
 				sURL = "http://stackoverflow.com/search?q="+ keyword;
+				chrome.tabs.create({url:sURL});
+				break;
+
+			case "shopclues":
+				sURL = "http://search.shopclues.com/?q=" + keyword;
 				chrome.tabs.create({url:sURL});
 				break;
 
@@ -61,16 +81,18 @@ function searchKeyword(array,keyword){
 				chrome.tabs.create({url:sURL});
 				break;
 
+
+
 			case "yandex":
 				sURL = "https://www.yandex.com/search/?text="+ keyword;
 				chrome.tabs.create({url:sURL});
 				break;
 
-		//Need to work on autoClick
+
 			case "yahoo":
 				sURL = "https://search.yahoo.com/search?p="+keyword;
 				chrome.tabs.create({url:sURL});
-				//document.getElementsByName("p").click();
+				
 				break;
 
 			case "youtube":
