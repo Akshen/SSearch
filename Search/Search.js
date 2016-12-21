@@ -46,7 +46,7 @@ function searchKeyword(array,keyword){
 
 		//Need to work on autoClick
 			case "google":
-				sURL = "https://www.google.com/?q="+keyword;
+				sURL = "https://www.google.com/search?q="+keyword;
 				chrome.tabs.create({url:sURL});
 				//console.log(document.getElementById("lst-ib").value);
 				break;
@@ -68,7 +68,7 @@ function searchKeyword(array,keyword){
 
 		//Need to work on autoClick
 			case "yahoo":
-				sURL = "https://www.yahoo.com/search?p="+keyword;
+				sURL = "https://search.yahoo.com/search?p="+keyword;
 				chrome.tabs.create({url:sURL});
 				//document.getElementsByName("p").click();
 				break;
