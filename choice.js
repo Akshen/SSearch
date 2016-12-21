@@ -18,7 +18,7 @@ else if (e.target.id === "call-search") {
 
 function openWindow()
 {
-	popupWindow("Search/Search.html","_blank",180,9);
+	popupWindow("Search/Search.html","_blank",240,15);
 }
   e.preventDefault();
 });
